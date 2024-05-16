@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Tienda de videojuegos para frikis" />
+		<meta name="Author" content="Carlos Haro Infante" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Switch</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	</head>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<header>
+		<nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+			<div class="container">
+				<img class="img" src="img/img.png" style="width: 100px; height: 100px;" />
+				<a class="navbar-brand" href="#">El Templo del Friki</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="index2.html">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consolas</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="xbox.html">XBOX</a></li>
+								<li><a class="dropdown-item" href="switch.html">Switch</a></li>
+								<li><a class="dropdown-item" href="PS.html">PlayStation</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="inicioS.html">Inicio Sesión</a></li>
+						<li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+						<li class="nav-item"><a class="nav-link" href="botones.html">Sobre Nosotros</a></li>
+						<li class="nav-item"><a class="nav-link" href="gestionPedidos/gestionPedidos.html">Gestión</a></li>
+						 <li class="nav-item carrito">
+                        <a href="cosasCarrito/carro2.html" class="nav-link">
+                            <i class="bi bi-cart"></i>
+                            <span id="contador-carrito" class="badge bg-danger">0</span>
+                        </a>
+                        <button id="clear-cart-button" class="btn btn-danger">Vaciar Carrito</button>
+                    </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<body>
+		<main class="fondoS">
+			<section class="container my-5">
+			<h2 class="text-center mb-4">Más vendidos de Switch</h2>
+			<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+				<div class="col">
+					<div class="card text-center">
+						<img src="img/kirby_discovery_of_the_stars-5620325.jpg" class="card-img-top img-fluid"
+							style="height: 400px; object-fit: cover;" alt="Kirby" />
+						<div class="card-body">
+							<h5 class="card-title">kirby y la tierra olvidada</h5>
+							<p class="card-text"><button class="btn btn-primary agregar-carrito"
+									data-producto="kirby y la tierra olvidada" data-precio="16.90">16.90€</button></p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card text-center">
+						<img src="img/Hogwarts-Legacy-Key-Art.jpg" class="card-img-top img-fluid"
+							style="height: 400px; object-fit: cover;" alt="Howarts Legacy" />
+						<div class="card-body">
+							<h5 class="card-title">Howarts Legacy</h5>
+							<p class="card-text"><button class="btn btn-primary agregar-carrito"
+									data-producto="Howarts Legacy" data-precio="47.30">47.30€</button></p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card text-center">
+						<img src="img/The-Legend-of-Zelda-Tears-of-the-Kingdom.jpg" class="card-img-top img-fluid"
+							style="height: 400px; object-fit: cover;" alt="Tearos Of Kingdom" />
+						<div class="card-body">
+							<h5 class="card-title">TLoZ Tears of Kingdom</h5>
+							<p class="card-text"><button class="btn btn-primary agregar-carrito"
+									data-producto="TLoZ Tears of Kingdom" data-precio="59.75">59.75€</button></p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card text-center">
+						<img src="img/MarioWonder.jpg" class="card-img-top img-fluid"
+							style="height: 400px; object-fit: cover;" alt="Mario Wonder" />
+						<div class="card-body">
+							<h5 class="card-title">Mario Wonder</h5>
+							<p class="card-text"><button class="btn btn-primary agregar-carrito"
+									data-producto="Mario Wonder" data-precio="31.45">31.45€</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+			<!-- Section: Social media -->
+			<section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+				<!-- Left -->
+				<div class="me-5 d-none d-lg-block">
+					<span>
+						Estate en contacto con nosotros en nuestras redes sociales: <br />
+						<i class="bi bi-twitter-x">: @ElTemploDelFriki</i> <br />
+						<i class="bi bi-instagram">: ElTemploDelFriki</i> <br />
+						<i class="bi bi-facebook">: ElTemploDelFriki</i>
+					</span>
+				</div>
+				<!-- Left -->
+
+				<!-- Right -->
+				<div>
+					<a href="" class="me-4 text-reset">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fab fa-google"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="" class="me-4 text-reset">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+				<!-- Right -->
+			</section>
+			<!-- Section: Social media -->
+
+			<!-- Section: Links  -->
+			<section class="">
+				<div class="container text-center text-md-start mt-5">
+					<!-- Grid row -->
+					<div class="row mt-3">
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<!-- Content -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								<i class="fas fa-gem me-3">ElTemploDelFriki</i>
+							</h6>
+							<p>Una empresa de venta de videojuegos, tanto digitales como físicos, queremos que los jugadores tengan la mejor experiencia posible <i class="bi bi-emoji-smile-fill"></i></p>
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Productos
+							</h6>
+							<p>
+								<a href="#!" class="text-reset">Videojuegos</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Merchandising</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Funkos</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Consolas</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Useful links
+							</h6>
+							<p>
+								<a href="#!" class="text-reset">Precios</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Ajustes</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Pedidos</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Ayuda</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+
+						<!-- Grid column -->
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+							<p><i class="fas fa-home me-3"></i> Sevilla, España, 41020</p>
+							<p>
+								<i class="fas fa-envelope me-3"></i>
+								ElTemploDelFriki@gmail.com
+							</p>
+							<p><i class="fas fa-phone me-3"></i> +34 633 536 269</p>
+							<p><i class="fas fa-print me-3"></i> +1 123 456 789</p>
+						</div>
+						<!-- Grid column -->
+					</div>
+					<!-- Grid row -->
+				</div>
+			</section>
+			<!-- Section: Links  -->
+
+			<!-- Copyright -->
+			<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+				©2024 Copyright:
+				<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+		<!-- Footer -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script src="js.js"></script>
+	</body>
+</html>

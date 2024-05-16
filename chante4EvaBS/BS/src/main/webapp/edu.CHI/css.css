@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+
+/* Estilos generales */
+header {
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve el menú hacia la derecha */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px; /* Espacio entre elementos del menú */
+}
+
+/* Ajuste de tamaño para las imágenes del carrusel */
+.carousel {
+    margin-top: 120px; /* Margen superior para separar del menú */
+}
+
+.carousel-item img {
+    max-height: 200px; /* Define la altura máxima de las imágenes */
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    max-width: 200%; /* Ajusta el ancho máximo para mantener la proporción */
+    margin: 0 auto; /* Centra las imágenes horizontalmente */
+}
+
+        
+        
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: block !important;
+        transition: max-height 0.5s ease;
+        max-height: none;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu-right {
+        right: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu-end {
+        left: auto;
+        right: 0;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
+
+      
+/* Ajustes para hacer el diseño responsive */
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de la imagen del logotipo */
+    img.img {
+        height: 100px;
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    /* Ajusta el padding de las tarjetas */
+    .tarjetas {
+        padding: 1rem;
+    }
+
+    /* Ajusta el tamaño del texto de la barra de navegación */
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    /* Ajusta el tamaño del texto del título */
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    /* Ajusta el tamaño de la imagen del logotipo */
+    img.img {
+        height: 80px;
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    /* Ajusta el tamaño del texto de la barra de navegación */
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+
+    /* Ajusta el tamaño del texto del título */
+    h2 {
+        font-size: 16px;
+    }
+}
+
+/* Registro */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.bodyR {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.registroForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.titulo {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.dentro {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.botonEnvio {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.botonEnvio:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+}
+
+.input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+}
+
+.input:focus {
+    border: 2px solid purple;
+}
+
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

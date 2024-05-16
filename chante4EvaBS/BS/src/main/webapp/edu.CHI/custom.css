@@ -1,0 +1,531 @@
+@charset "UTF-8";
+
+header {
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve el menú hacia la derecha */
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px; /* Espacio entre elementos del menú */
+    
+}
+
+/* Ajustes para hacer el diseño responsive */
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ajusta el tamaño de la imagen del logotipo */
+    img.img {
+        height: 100px;
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    /* Ajusta el padding de las tarjetas */
+    .tarjetas {
+        padding: 1rem;
+    }
+
+    /* Ajusta el tamaño del texto de la barra de navegación */
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    /* Ajusta el tamaño del texto del título */
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    /* Ajusta el tamaño de la imagen del logotipo */
+    img.img {
+        height: 80px;
+        width: 80px;
+        margin-right: 5px;
+    }
+
+    /* Ajusta el tamaño del texto de la barra de navegación */
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+
+    /* Ajusta el tamaño del texto del título */
+    h2 {
+        font-size: 16px;
+    }
+}
+
+/*.body{
+    background-color: bisque;
+    text-align: center;
+}
+
+
+
+img{
+    height: 200px;
+    width: 200px;	
+    margin-right: 30%;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+   
+}
+
+.imghearder{
+  height: 10px;
+  width: 10px;
+}
+
+.imgscroll{
+    height: 80%;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    margin-left: 10%;
+}
+
+.imgtarjeta{
+  height: 90%;
+  width: 90%;
+  align-items: center;  
+  display: flex;
+
+}
+
+.imgGira{
+  margin-left: 43%;
+  align-items: center;
+}
+
+main{
+    text-align: center;  
+}
+
+.colorboton{
+    color: black;
+    background-color: black;
+}
+
+
+.carousel-control-prev-icon{
+	color: black;
+}
+
+.h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 3rem;
+    margin-left: 15rem;
+    
+}
+
+.container{
+    display: flex;
+}
+
+
+
+.aa{
+
+  border-radius: 25px;
+}
+
+.tarjetas{
+  padding-top: 30rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  border-radius: 10px;
+  height: 30rem;
+  text-align: center;
+  
+}
+
+
+
+
+
+/*.card{
+    position: relative;
+    left: 0px;
+    align-items: center;
+    height: 60%;
+    width: 20%;
+    margin-top: 15rem;
+}
+
+.card:not(:first-child){
+    margin-left: -50px;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+}
+}
+.card:hover ~ .card {
+    left: 50px;
+}
+
+.carrito{
+    align-items: end;
+    align-content: end;
+    margin-top: 5px;
+}
+
+.espaciorow{
+  margin-left: 5%;
+}
+
+
+/* Registro */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.bodyR{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+}
+
+.registroForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.titulo{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.dentro{
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.input{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #DADCE0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+::placeholder {
+    color: transparent;
+  }
+
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+
+  .botonEnvio {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .botonEnvio:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+  }
+
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+  }
+
+  .input:focus {
+    border: 2px solid purple;
+  }
+
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .gradient-background {
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #6a11cb;
+        
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+        
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+        }
+
+
+
+        .lateral{
+          box-sizing: border-box;
+          width: max(8%, 200px);
+          display: inline-block;
+          position: fixed;
+          padding-top: 30px
+          }
+          .principal{
+          margin-left: max(10%, 200px);
+          padding: 0 10px;
+          height: 100%;
+          text-align: justify;
+          background:white;
+          }
+          /*Hasta aquí ya tenemos un menu lateral fijo,
+          ahora viene ponerlo bonito*/
+          
+          .lateral header{
+          font-weight: bold;
+          font-size: 1.5rem;
+          text-align: center;
+          border-bottom: 1px solid black;
+          background: aqua
+          }
+          .lateral ul{
+          list-style:none;
+          padding-left:0;
+          margin-top:0;
+          }
+          .lateral ul li{
+          display:block;
+          position: relative;
+          padding: 8px 10px;
+          margin-left:0;
+          border-bottom:1px solid #060696
+          }
+          .lateral ul li a{
+          color: black;
+          text-decoration:none;
+          }
+          .lateral ul li a:after{
+          content: ' ';
+          position:absolute;
+          width: 100%;
+          height: 100%;
+          top:0;
+          left:0;
+          }
+          .lateral ul li:hover, .lateral ul li:hover a{
+          background: blue;
+          color: white;
+          }
+
+
+.fondoPS{
+  background-image: url(https://esports.as.com/2020/01/08/bonus/evolucion-logo-PlayStation_1316878307_750026_1024x576.png);
+}
+
+.fondoX{
+  background-image: url(https://images2.alphacoders.com/132/1325519.jpg);
+}
+
+.fondoS{
+  background-image: url(https://www.muycomputer.com/wp-content/uploads/2020/08/nueva-Nintendo-Switch-1000x600.png);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.html {
+  font-family: Arial;
+  font-size: 16px;
+  background: #5e42a6;
+}
+
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: #312450;
+  font-size: 0.65em;
+}
+
+.nav {
+  position: relative;
+  margin: 0 15%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  
+}
+
+.nav ul {
+  list-style: none;
+  
+  li {
+    position: relative;
+    margin: 3.2em 0;
+    
+    a {
+      line-height: 5em;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.4em;
+      color: rgba(#FFF, 0.35);
+      display: block;
+      transition: all ease-out 300ms;
+    }
+    
+    &.active a {
+      color: white;
+    }
+    
+    &:not(.active)::after {
+      opacity: 0.2;
+    }
+    
+    &:not(.active):hover a {
+      color: rgba(#FFF, 0.75);
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.2em;
+      background: black;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(to right, #5e42a6, #b74e91)
+    }
+  }
+}
+
+.twitter {
+  position: relative;
+  width: 75%;
+  float: right;
+  height: 100vh;
+ }
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  a {
+    position: relative;
+    }
+    
+    .imgP {
+      width: 48px;
+      height: 48px;
+    }
+  
+  
+  .pT {
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+
+
+.N{
+		
+		
+  height: 200px;
+  
+}
+
+.filaN {
+		
+		
+  background-color: rosybrown;
+  border-radius: 2px;
+  border: solid;
+  text-align: center;
+  align-items: center;
+  align-self:center ;
+  display: flex;
+}
+
+
+
+
+
+
